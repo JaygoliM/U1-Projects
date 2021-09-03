@@ -19,7 +19,8 @@ public class Sales {
 
         double TAX = salesTax/100.0;
         double unalteredPrice = salePrice * quantityBought;
-        double discountedPrice = unalteredPrice * 0.1;
+        double TrueDC = discount/100.0;
+        double discountedPrice = unalteredPrice *TrueDC;
         double subTotal = salePrice * quantityBought - discountedPrice;
         double taxTotal = subTotal * TAX;
         double totalCost = subTotal + taxTotal;
